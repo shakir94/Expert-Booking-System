@@ -19,31 +19,31 @@ const io = new Server(server, {
   },
 });
 
-// Make io accessible to routes/controllers
+
 app.set('io', io);
 
-// Connect to MongoDB
+
 connectDB();
 
-// Middleware
+
 app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:5173' }));
 app.use(express.json());
 
-// Routes
+
 app.use('/api/experts', expertRoutes);
 app.use('/api/bookings', bookingRoutes);
 
-// Health check
+
 app.get('/api/health', (req, res) => res.json({ status: 'OK', timestamp: new Date() }));
 
-// Error handler (must be last)
+
 app.use(errorHandler);
 
-// Socket.io
+
 initSocket(io);
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`🔌 Socket.io initialized`);
+  console.log(`Server running on port ${PORT}`);
+  console.log(`Socket.io initialized`);
 });
