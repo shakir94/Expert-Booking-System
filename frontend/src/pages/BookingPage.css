@@ -1,0 +1,236 @@
+.booking-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.booking-missing {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.booking-missing-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.booking-missing-title {
+  margin-bottom: 12px;
+}
+
+.booking-missing-text {
+  color: var(--gray-500);
+  margin-bottom: 24px;
+}
+
+.booking-missing-btn {
+  padding: 12px 28px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-missing-btn:hover {
+  background: var(--primary-dark);
+}
+
+/* Success screen */
+.booking-success-wrap {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 24px;
+}
+
+.booking-success-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  text-align: center;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--gray-200);
+}
+
+.booking-success-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto 24px;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.booking-success-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--gray-900);
+}
+
+.booking-success-sub {
+  color: var(--gray-500);
+  margin-bottom: 32px;
+  font-size: 15px;
+}
+
+.booking-summary-table {
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.booking-summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-200);
+  font-size: 14px;
+}
+
+.booking-summary-row:last-child {
+  border-bottom: none;
+}
+
+.booking-summary-label {
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.booking-summary-value {
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.booking-success-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-outline:hover {
+  background: var(--primary-light);
+}
+
+/* Form page */
+.booking-slot-banner {
+  background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  color: white;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.booking-slot-left p:first-child {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.booking-slot-expert-name {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.booking-slot-spec {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.booking-slot-right {
+  text-align: right;
+}
+
+.booking-slot-right p:first-child {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.booking-slot-date {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.booking-slot-time {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.booking-form-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-200);
+}
+
+.booking-form-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.booking-form-sub {
+  color: var(--gray-500);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.booking-error-box {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  color: #991b1b;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

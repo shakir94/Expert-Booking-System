@@ -1,0 +1,162 @@
+/* ── BookingForm ── */
+
+.bf-grid {
+  display: grid;
+  gap: 18px;
+}
+
+/* Slot box (read-only date & time) */
+.bf-slot-box {
+  background: var(--primary-light);
+  border: 1.5px solid #c7d2fe;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+
+.bf-slot-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.bf-slot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.bf-slot-hint {
+  font-size: 11px;
+  color: var(--primary);
+  margin-top: 10px;
+  opacity: 0.65;
+}
+
+/* Labels */
+.bf-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 6px;
+}
+
+.bf-label-primary {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.bf-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 14px;
+  outline: none;
+  color: var(--gray-800);
+  background: var(--gray-50);
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.bf-input:focus {
+  border-color: var(--primary);
+}
+
+.bf-input.bf-input-error {
+  border-color: var(--danger);
+}
+
+.bf-input-readonly {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #c7d2fe;
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--primary);
+  background: var(--primary-light);
+  font-weight: 700;
+  cursor: not-allowed;
+  font-family: inherit;
+}
+
+/* Textarea */
+.bf-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Two column row */
+.bf-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Error text */
+.bf-error-text {
+  color: var(--danger);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Notes counter */
+.bf-counter-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bf-counter {
+  font-size: 11px;
+  color: var(--gray-400);
+}
+
+.bf-counter.bf-counter-warn {
+  color: var(--warning);
+}
+
+/* Submit button */
+.bf-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+}
+
+.bf-submit-btn:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.bf-submit-btn:disabled {
+  background: var(--gray-300);
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.bf-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}

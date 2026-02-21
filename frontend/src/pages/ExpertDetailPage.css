@@ -1,0 +1,241 @@
+.detail-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 28px;
+  padding: 8px 0;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+.expert-header {
+  background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  color: white;
+  margin-bottom: 28px;
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-xl);
+}
+
+.expert-header-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  background: white;
+  flex-shrink: 0;
+}
+
+.expert-header-info {
+  flex: 1;
+}
+
+.expert-header-name {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.expert-header-spec {
+  opacity: 0.85;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.expert-header-stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.expert-stat-value {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.expert-stat-label {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 24px;
+  align-items: start;
+}
+
+.detail-picker-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-200);
+}
+
+.detail-picker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detail-picker-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.realtime-badge {
+  font-size: 11px;
+  padding: 4px 10px;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+}
+
+.summary-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-200);
+  position: sticky;
+  top: 90px;
+}
+
+.summary-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.summary-expert-box {
+  background: var(--gray-50);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.summary-expert-label {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-bottom: 4px;
+}
+
+.summary-expert-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.summary-slot-box {
+  background: var(--primary-light);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #c7d2fe;
+}
+
+.summary-slot-label {
+  font-size: 13px;
+  color: var(--primary);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.summary-slot-date {
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.summary-slot-time {
+  font-weight: 700;
+  color: var(--primary-dark);
+  font-size: 18px;
+}
+
+.summary-rate-row {
+  border-top: 1px solid var(--gray-200);
+  padding-top: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-rate-label {
+  color: var(--gray-500);
+  font-size: 13px;
+}
+
+.summary-rate-value {
+  font-weight: 600;
+}
+
+.summary-book-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.summary-book-btn:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.summary-book-btn:disabled {
+  background: var(--gray-200);
+  color: var(--gray-400);
+  cursor: not-allowed;
+}
+
+.summary-bio {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.summary-bio-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 8px;
+}
+
+.summary-bio-text {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+.detail-error-wrap {
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+}

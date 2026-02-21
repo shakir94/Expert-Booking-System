@@ -1,0 +1,115 @@
+/* ── TimeSlotPicker ── */
+
+/* Empty state */
+.tsp-empty {
+  padding: 32px;
+  text-align: center;
+  color: var(--gray-500);
+}
+
+/* Date selector row */
+.tsp-date-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.tsp-date-btn {
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--gray-200);
+  background: white;
+  color: var(--gray-700);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  font-family: inherit;
+}
+
+.tsp-date-btn.tsp-date-btn-active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: white;
+}
+
+.tsp-date-btn.tsp-date-btn-all-booked {
+  border-color: var(--gray-200);
+  background: var(--gray-50);
+  color: var(--gray-300);
+  cursor: not-allowed;
+}
+
+/* Times section */
+.tsp-times-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tsp-times-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.tsp-live-badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+/* Time slot grid */
+.tsp-time-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.tsp-time-btn {
+  padding: 12px 8px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--gray-200);
+  background: white;
+  color: var(--gray-700);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+  font-family: inherit;
+}
+
+.tsp-time-btn:hover:not(:disabled) {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.tsp-time-btn.tsp-time-btn-selected {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: white;
+}
+
+.tsp-time-btn.tsp-time-btn-booked {
+  border-color: var(--gray-200);
+  background: var(--gray-100);
+  color: var(--gray-300);
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.tsp-booked-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 2px;
+}
